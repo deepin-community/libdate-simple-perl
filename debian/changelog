@@ -1,0 +1,121 @@
+libdate-simple-perl (3.0300-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:44:30 +0800
+
+libdate-simple-perl (3.0300-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+
+  [ gregor herrmann ]
+  * debian/control: update Build-Depends for cross builds.
+  * debian/watch: use uscan version 4.
+
+  [ Edward Betts ]
+  * debian/control: Increase debhelper compat from 12 to 13.
+  * debian/control: Set Rules-Requires-Root to no.
+  * debian/control: Standards-Version: 4.5.0 (no changes)
+  * debian/copyright: Update copyright year.
+
+ -- Edward Betts <edward@4angle.com>  Fri, 01 May 2020 17:34:15 +0100
+
+libdate-simple-perl (3.0300-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Edward Betts ]
+  * debian/compat: update to 11
+  * debian/control: Standards-Version: 4.2.1 (no changes)
+  * debian/control: wrap-and-sort
+  * debian/control: add Testsuite: autopkgtest-pkg-perl
+  * debian/control: update e-mail address
+  * debian/rules: add DEB_BUILD_MAINT_OPTIONS = hardening=+all
+  * debian/copyright: add 2018 and update e-mail address
+
+ -- Edward Betts <edward@4angle.com>  Sat, 15 Dec 2018 12:21:06 +0000
+
+libdate-simple-perl (3.0300-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ gregor herrmann ]
+  * Email change: gregor herrmann -> gregoa@debian.org
+  * Convert to source format 3.0 (quilt).
+  * Add patch to fix pod2man errors.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/watch: right-pad version number to get from the devel release
+    to the real one.
+  * New upstream release.
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Use dh(1) in debian/rules.
+  * Use debhelper 9.20120312 to get all hardening flags.
+  * debian/copyright: switch formatting to Copyright-Format 1.0.
+  * Update short and long description.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 21 Feb 2014 19:29:30 +0100
+
+libdate-simple-perl (3.03.03-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * debian/rules: delete /usr/share/perl5 only if it exists.
+
+  [ Damyan Ivanov ]
+  * New upstream release
+  * debian/watch: use dist-based URL and better patern
+  * debian/rules: converted to debhelper
+  * Standards-Version: 3.7.3 (no changes)
+  * add myself to Uploaders
+  * debian/copyright: use author-neutral URL
+
+ -- Damyan Ivanov <dmn@debian.org>  Mon, 21 Jan 2008 13:03:30 +0200
+
+libdate-simple-perl (3.02-1) unstable; urgency=low
+
+  [ Edward Betts ]
+  * New upstream release
+  * debian/rules: change Maintainer to Debian Perl Group
+  * debian/rules: add Uploaders: Edward Betts <edward@debian.org>
+
+  [ gregor herrmann ]
+  * Set Standards-Version to 3.7.2 (no changes).
+  * Set debhelper compatibility level to 5.
+  * Remove empty /usr/share/perl5 directory from binary package.
+
+ -- gregor herrmann <gregor+debian@comodo.priv.at>  Thu, 07 Jun 2007 15:01:06 +0200
+
+libdate-simple-perl (3.01-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Edward Betts <edward@debian.org>  Fri, 22 Oct 2004 14:13:53 +0100
